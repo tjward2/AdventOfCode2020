@@ -1,0 +1,9 @@
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\AdventOfCode.exe.config
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\AdventOfCode.exe
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\AdventOfCode.pdb
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.exe
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.pdb
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\expenseReport.txt
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\passwordpolicy.txt
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\TreeMap.txt
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.csprojAssemblyReference.cache
