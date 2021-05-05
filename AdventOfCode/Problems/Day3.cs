@@ -22,32 +22,40 @@ namespace AdventOfCode.Problems
 
     public override object SolvePart2()
     {
-      return (countTreesWithSlope(1, 1)
-        * countTreesWithSlope(1, 3)
-        * countTreesWithSlope(1, 5)
-        * countTreesWithSlope(1, 7)
-        * countTreesWithSlope(2, 1)
-        );
+      var slope1 = countTreesWithSlope(1, 1);
+      var slope2 = countTreesWithSlope(1, 3);
+      var slope3 = countTreesWithSlope(1, 5);
+      var slope4 = countTreesWithSlope(1, 7);
+      var slope5 = countTreesWithSlope(2, 1);
+
+      var answer = slope1 * slope2 * slope3 * slope4 * slope5;
+
+     
+      return answer;
+
     }
 
+   
     private int countTreesWithSlope(int down, int right)
     {
-      //_treeMap only contains the input file, when we reach the end it has to wrap around to the beginning again
+
       int i = 0, j = 0; //starting position
       int numberOfRows = _treeMap.GetLength(0);
       int numberOfColumns = _treeMap.GetLength(1);
       int treeCount = 0;
 
-      while (i < numberOfRows - down)  //don't go out of bounds passed the end of the slope, we're looking a few rows ahead
+      while (i < numberOfRows)  
       {
-        j = j + right;
-        i = i + down; ;
-        //check if j is beyond the range of the array and if so, wrap it around to the start
-        if (j > numberOfColumns - 1)
-          j = j - numberOfColumns;
-
-        if (containsTree(i, j))
+        //check if the current location contains a tree
+        if (containsTree(i, j%numberOfColumns))
           treeCount++;
+
+        j = j + right;  //move right
+        i = i + down;   //move down
+
+        ////check if j is beyond the range of the array and if so, wrap it around to the start
+        //if (j > numberOfColumns - 1)
+        //  j = j - numberOfColumns;
 
       }
 
@@ -68,10 +76,10 @@ namespace AdventOfCode.Problems
         int j = 0;
         foreach (char c in s)
         {
-          if (c == '.')
-            treeLocations[i,j] = false;
-          else
+          if (c == '#')
             treeLocations[i,j] = true;
+          else 
+            treeLocations[i,j] = false;
 
           j++;
         }
@@ -83,6 +91,7 @@ namespace AdventOfCode.Problems
 
     private bool containsTree(int i, int j)
     {
+      
       return _treeMap[i, j];
     }
   }

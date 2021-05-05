@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InputReader.cs" />
+    <Compile Include="Passport.cs" />
     <Compile Include="Problems\Day2.cs" />
     <Compile Include="Problems\Day1.cs" />
     <Compile Include="Problems\Day3.cs" />
+    <Compile Include="Problems\Day4.cs" />
     <Compile Include="Problems\ProblemBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="inputs\expenseReport.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inputs\PassportList.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="inputs\passwordpolicy.txt">

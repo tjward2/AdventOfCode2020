@@ -10,6 +10,13 @@ namespace AdventOfCode
   public class InputReader
   {
 
+    public string GetAsString(string path)
+    {
+      using (TextReader textReader = File.OpenText(path))
+      {
+        return textReader.ReadToEnd();
+      }
+    }
     public List<int> GetListOfInts(string path)
     {
       List<string> inputAsString = GetListOfStrings(path);

@@ -7,3 +7,4 @@ C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\expenseR
 C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\passwordpolicy.txt
 C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\TreeMap.txt
 C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.csprojAssemblyReference.cache
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\PassportList.txt

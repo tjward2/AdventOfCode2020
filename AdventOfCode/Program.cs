@@ -23,6 +23,9 @@ namespace AdventOfCode
       var output5 = d3.SolvePart1();
       var output6 = d3.SolvePart2();
 
+      Day4 d4 = new Day4();
+      var output7 = d4.SolvePart1();
+
     }
   }
 }
