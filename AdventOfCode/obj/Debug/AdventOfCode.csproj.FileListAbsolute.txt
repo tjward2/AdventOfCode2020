@@ -8,3 +8,4 @@ C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\password
 C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\TreeMap.txt
 C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.csprojAssemblyReference.cache
 C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\bin\Debug\inputs\PassportList.txt
+C:\Users\wardtr\source\repos\AdventOfCode\AdventOfCode\obj\Debug\AdventOfCode.csproj.CoreCompileInputs.cache

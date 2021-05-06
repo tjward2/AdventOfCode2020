@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode.Problems
 {
@@ -12,10 +9,14 @@ namespace AdventOfCode.Problems
 
     public Day2()
     {
-      _inputList = _inputReader.GetListOfStrings(@"inputs/passwordpolicy.txt");
+      _inputList = _inputReadingService.GetListOfStrings(@"inputs/passwordpolicy.txt");
     }
     public override object SolvePart1()
     {
+      /*
+        Each line gives the password policy and then the password. The password policy indicates the lowest and highest number of times a given letter must appear for the password to be valid. 
+        For example, 1-3 a means that the password must contain a at least 1 time and at most 3 times.
+      */
       int validPasswordCount = 0;
       foreach (string s in _inputList)
       {
@@ -28,6 +29,11 @@ namespace AdventOfCode.Problems
 
     public override object SolvePart2()
     {
+      /*
+        Each policy actually describes two positions in the password, where 1 means the first character, 2 means the second character, and so on. (Be careful; Toboggan Corporate Policies have no concept of "index zero"!) 
+        Exactly one of these positions must contain the given letter. Other occurrences of the letter are irrelevant for the purposes of policy enforcement.
+      */
+
       int validPasswordCount = 0;
       foreach (string s in _inputList)
       {
@@ -62,6 +68,7 @@ namespace AdventOfCode.Problems
       //check the string for the number of occurrences of the character we're looking for
       int numberOfOccurrencesOfChar = password.Count(x => x == letter);
 
+      //is the number of occurrences between the min and max valus required for this to be a valid password?
       if ((min <= numberOfOccurrencesOfChar) && (numberOfOccurrencesOfChar <= max))
         return true;
 
