@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode.Problems
 {
-  public class Day3 : ProblemBase
+  public class Day3 : DayBase
   {
     List<string> _inputFile;
     bool[,] _treeMap;

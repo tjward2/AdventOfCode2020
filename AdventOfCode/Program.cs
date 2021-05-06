@@ -27,6 +27,7 @@ namespace AdventOfCode
       Day4 d4 = new Day4();
       Console.WriteLine((int)d4.SolvePart1());
 
+      Console.Write("Press any key to exit");
       Console.ReadKey();
 
     }

@@ -43,13 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\IInputReadingService.cs" />
     <Compile Include="Services\InputReadingService.cs" />
     <Compile Include="Models\Passport.cs" />
     <Compile Include="Problems\Day2.cs" />
     <Compile Include="Problems\Day1.cs" />
     <Compile Include="Problems\Day3.cs" />
     <Compile Include="Problems\Day4.cs" />
-    <Compile Include="Problems\ProblemBase.cs" />
+    <Compile Include="Problems\DayBase.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

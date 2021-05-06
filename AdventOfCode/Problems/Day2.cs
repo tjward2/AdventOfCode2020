@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AdventOfCode.Problems
 {
-  public class Day2 : ProblemBase
+  public class Day2 : DayBase
   {
     List<string> _inputList;
 

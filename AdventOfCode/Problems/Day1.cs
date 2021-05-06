@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace AdventOfCode.Problems
 {
-  public class Day1 : ProblemBase
+  public class Day1 : DayBase
   {
     List<int> _expenseReportlines;
     public Day1() : base()

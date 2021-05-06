@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode.Services
 {
-  public class InputReadingService
+  public class InputReadingService : IInputReadingService
   {
 
     public string GetAsString(string path)
